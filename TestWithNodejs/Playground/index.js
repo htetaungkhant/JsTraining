@@ -54,3 +54,39 @@ for (let i = 0; i < 3; i++) {
   setTimeout(() => console.log(i), 1); // 1 2 3
 }
 */
+
+/* 
+const obj = {
+  testFun: () => {
+    console.log("gg");
+  },
+};
+obj["testFun"](); // gg
+ */
+
+/* 
+function testUseStrict() {
+  "use strict";
+
+  return this;
+}
+console.log(testUseStrict()); // undefined if 'use strict', if not 'use strict', it is global object
+ */
+
+/* 
+let myObj = { value: "my object" };
+global.value = "global object";
+function testGlobalObject(name) {
+  return this.value + " " + name;
+}
+console.log(testGlobalObject()); // global object undefined
+console.log(testGlobalObject.call(myObj)); // my object undefined
+console.log(testGlobalObject.apply(myObj)); // my object undefined
+console.log(testGlobalObject.call(myObj, "bob")); // my object bob
+console.log(testGlobalObject.apply(myObj, ["bob"])); // my object bob
+ */
+
+/* 
+let test = ["a", "b", "c", 1, 2];
+console.log(`test ${...test}`); // error occur
+ */
