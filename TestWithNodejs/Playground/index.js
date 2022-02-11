@@ -90,3 +90,48 @@ console.log(testGlobalObject.apply(myObj, ["bob"])); // my object bob
 let test = ["a", "b", "c", 1, 2];
 console.log(`test ${...test}`); // error occur
  */
+
+/* 
+let pattern = /xyz/;
+console.log(typeof pattern); // object
+ */
+
+/* 
+function Car(brand, model, year) {
+  this.brand = brand;
+  this.model = model;
+  this.year = year;
+
+  return "test";
+}
+console.log(Car("BMW", "745li", 2010)); // test   // if no return, undefined
+console.log(new Car("BMW", "745li", 2010)); // Car { brand: 'BMW', model: '745li', year: 2010 }
+ */
+
+/* 
+// is not ok if falsy values
+let shortCircuitOperator =
+  false || "" || 0 || -0 || 0n || NaN || null || undefined || "test";
+console.log(shortCircuitOperator); // "test"
+// ok if falsy values
+let unShortCircuitOperator =
+  false && "" && 0 && -0 && 0n && NaN && null && undefined && "test";
+console.log(unShortCircuitOperator); // false
+ */
+
+/* 
+let myObj = {
+  greet: (value) => {
+    console.log(value);
+  },
+};
+myObj.greet && myObj.greet("test"); // test
+myObj.greet || myObj.greet("test"); // nothing output
+ */
+
+/* 
+// (??) Nullish coalescing operator
+// only check is null or undefined
+let test = null;
+if (test ?? true) console.log("gg");
+ */
