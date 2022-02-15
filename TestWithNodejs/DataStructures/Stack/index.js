@@ -1,11 +1,11 @@
-const Stack = require("./stack");
+const Stack = require('./stack');
 
 const fruits = new Stack();
 
-fruits.push("Apple");
-fruits.push("Orange");
-fruits.push("Banana");
-fruits.push("PineApple");
+fruits.push('Apple');
+fruits.push('Orange');
+fruits.push('Banana');
+fruits.push('PineApple');
 console.log(fruits);
 
 console.log(fruits.pop());

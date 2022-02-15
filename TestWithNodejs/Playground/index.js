@@ -135,3 +135,17 @@ myObj.greet || myObj.greet("test"); // nothing output
 let test = null;
 if (test ?? true) console.log("gg");
  */
+
+/* 
+// populating an array
+let N = 10;
+const array = Array(N)
+  .fill()
+  .map((_, i) => i + 1);
+console.log(array); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+ */
+
+/* 
+const obj = { gg: 'gg', test: 'test', 1: 1, firstName: 'htet' };
+console.log(Object.keys(obj)); // [ '1', 'gg', 'test', 'firstName' ] unordered
+ */
